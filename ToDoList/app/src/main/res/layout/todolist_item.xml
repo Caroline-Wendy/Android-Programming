@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/rowDate"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/notepad_paper"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:requiresFadingEdge="vertical"
+        android:textColor="#F000"
+        android:layout_alignParentRight="true"
+    />
+
+    <mzx.spike.todolist.app.ToDoListItemView
+        android:id="@+id/row"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:requiresFadingEdge="vertical"
+        android:textColor="@color/notepad_text"
+        android:layout_toLeftOf="@+id/rowDate"
+    />
+</RelativeLayout>
